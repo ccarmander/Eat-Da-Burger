@@ -1,0 +1,94 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/Triburgers.png");
+  background-size: cover;
+  background-position: 50%;
+  width: 100vw;
+  height: 100vh;
+  font-size: large;
+  font-family: 'Modak', serif;
+}
+
+.my-container{
+  margin: 10px auto;
+}
+h1 {
+  font-family: 'Modak', sans-serif;
+  font-weight: 300;
+  color:rgba(194, 129, 9);
+  text-align: center;
+  font-size: 58px;
+  line-height: 0.8em;
+}
+.eat-da {
+  font-size: 40px;
+  color: rgb(194, 129, 9);
+}
+
+h3 {
+  background: rgba(212, 133, 4, 0.8);
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+}
+#burger-name:placeholder {
+  color: rgb(190, 190, 190);
+}
+#burger-name:focus::placeholder {
+  color: transparent;
+}
+.place-btn {
+  background: rgb(180, 120, 9);
+  color: white;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 57px;
+  }
+ 
+}
+
+
+h4 {
+  background: rgba(212, 133, 4, 0.8);
+  margin: 0;
+  padding: 10px;
+  font-size: 19px;
+}
+
+.wait-container, .devoured-container {
+  padding: 0;
+}
+.wait-container ul, .devoured-container ul {
+  background: rgba(228, 217, 200, 0.8);
+  padding: 0 0 10px 0;
+  min-height: 40px;
+}
+li {
+  list-style: none;
+  padding: 3px 0 0 0;
+}
+
+.devoured-btn, .delete-btn {
+  border: 1px solid black;
+  background: none;
+  margin: 2px;
+  padding: 0px 7px;
+}
+.devoured-btn:hover {
+  border: 1px solid rgba(212, 133, 4, 0.8);
+  background: rgba(212, 133, 4, 0.8);
+  color: black;
+}
+.delete-btn:hover {
+  border: 1px solid rgba(212, 133, 4, 0.8);
+  background: rgba(212, 133, 4, 0.8);
+  color: black;
+}

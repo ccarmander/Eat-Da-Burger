@@ -1,0 +1,52 @@
+<div class="container my-container">
+
+  <div class="row justify-content-center my-2 mt-md-3 mb-md-2">
+    <h1 class="my-2">
+      <span class="eat-da">Eat-Da-</span>
+      <br>BURGER!</h1>
+  </div>
+
+  <div class="row justify-content-center text-center mb-2 my-md-3">
+    <h3 class="col-12">What Burger would you like to order??</h3>
+
+    <form class="burger-form input-group justify-content-center col-12">
+      <label for="burger-name"></label>
+      <input type="text" id="burger-name" name="name" placeholder="Baker Burger">
+      <div class="input-group-append">
+        <button type="submit" class="btn place-btn">Place</button>
+      </div>
+    </form>
+
+
+  </div>
+
+
+  <div class="row justify-content-around text-center px-3">
+
+    <div class="col-12 col-md-5 wait-container">
+      <h4>Burgers Ordered </h4>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/not-devoured-block devoured = true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+
+    <div class="col-12 col-md-5 devoured-container">
+      <h4>Burgers Devoured </h4>
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/devoured-block devoured = false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+  </div>
+
+
+</div>
